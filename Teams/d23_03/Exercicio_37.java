@@ -39,7 +39,7 @@ public class Exercicio_37 {
                 break;
             case 3: // Caixa
                 cargo = cargo.replace("", "caixa");
-                aplicaPercentual = salarioBase * percentualSecretario35;
+                aplicaPercentual = salarioBase * percentualCaixa20;
                 salarioFinal = salarioBase + aplicaPercentual;
 
                 System.out.printf("Seu cargo é %s, portanto, o valor do aumento é de R$ %.2f. Seu novo salário será de R$ %.2f", cargo, aplicaPercentual, salarioFinal);
