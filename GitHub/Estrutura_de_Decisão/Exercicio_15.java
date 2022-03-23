@@ -1,8 +1,8 @@
-package exercícios.GitHub.Estrutura_de_Decisão;
+package GitHub.Estrutura_de_Decisão;
 
 import java.util.Scanner;
 
-public class Exercício_15 {
+public class Exercicio_15 {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
         System.out.printf("Informe seu nome: ");

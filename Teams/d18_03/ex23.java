@@ -1,4 +1,4 @@
-package exercícios.Teams.d18_03;
+package Teams.d18_03;
 
 public class ex23 {
     public static void main(String[] args) {

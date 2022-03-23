@@ -1,4 +1,4 @@
-package exercícios.GitHub.Estrutura_Sequencial;
+package GitHub.Estrutura_Sequencial;
 
 import java.lang.Math;
 import java.util.Scanner;

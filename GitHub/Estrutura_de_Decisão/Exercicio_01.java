@@ -1,4 +1,4 @@
-package exercícios.GitHub.Estrutura_de_Decisão;
+package GitHub.Estrutura_de_Decisão;
 
 import java.util.Scanner;
 

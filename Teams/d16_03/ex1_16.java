@@ -1,4 +1,4 @@
-package exercícios.Teams.d16_03;
+package Teams.d16_03;
 import java.util.Scanner;
 
 public class ex1_16 {

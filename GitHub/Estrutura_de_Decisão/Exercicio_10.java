@@ -1,8 +1,8 @@
-package exercícios.GitHub.Estrutura_de_Decisão;
+package GitHub.Estrutura_de_Decisão;
 
 import java.util.Scanner;
 
-public class Exercício_10 {
+public class Exercicio_10 {
     public static void main(String[] args) {
         final int salarioMinimo2022 = 1212;
         System.out.println("Insira o valor do seu salário atual:");

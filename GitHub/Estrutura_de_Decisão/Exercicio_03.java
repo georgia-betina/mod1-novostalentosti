@@ -1,8 +1,8 @@
-package exercícios.GitHub.Estrutura_de_Decisão;
+package GitHub.Estrutura_de_Decisão;
 
 import java.util.Scanner;
 
-public class Exercício_03 {
+public class Exercicio_03 {
     public static void main(String[] args) {
         System.out.println("Digite um número:");
         Scanner leitor = new Scanner(System.in);

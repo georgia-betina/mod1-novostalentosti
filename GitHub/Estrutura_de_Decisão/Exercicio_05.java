@@ -1,8 +1,8 @@
-package exercícios.GitHub.Estrutura_de_Decisão;
+package GitHub.Estrutura_de_Decisão;
 
 import java.util.Scanner;
 
-public class Exercício_05 {
+public class Exercicio_05 {
     public static void main(String[] args) {
         System.out.println("Informe o valor do empréstimo:");
         Scanner leitor = new Scanner(System.in);

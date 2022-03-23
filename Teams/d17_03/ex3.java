@@ -1,4 +1,4 @@
-package exercícios.Teams.d17_03;
+package Teams.d17_03;
 
 import java.util.Scanner;
 

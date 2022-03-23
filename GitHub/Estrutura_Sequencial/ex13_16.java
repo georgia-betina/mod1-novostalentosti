@@ -1,4 +1,4 @@
-package exercícios.GitHub.Estrutura_Sequencial;
+package GitHub.Estrutura_Sequencial;
 
 public class ex13_16 {
     public static void main(String[] args) {
