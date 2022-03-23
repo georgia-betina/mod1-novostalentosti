@@ -2,7 +2,7 @@ package exercícios.GitHub.Estrutura_de_Decisão;
 
 import java.util.Scanner;
 
-public class ex13 {
+public class Exercício_13 {
     public static void main(String[] args) {
         System.out.printf("Informe o tipo de combustível:%n%nA - Álcool%nG - Gasolina%n%nR: ");
         Scanner leitor = new Scanner(System.in);

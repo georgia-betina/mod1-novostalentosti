@@ -2,7 +2,7 @@ package exercícios.GitHub.Estrutura_de_Decisão;
 
 import java.util.Scanner;
 
-public class ex6 {
+public class Exercício_06 {
     public static void main(String[] args) {
         System.out.printf("Informe o seu nome: ");
         Scanner leitor = new Scanner(System.in);
