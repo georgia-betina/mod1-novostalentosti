@@ -1,3 +1,5 @@
+package GitHub.Estrutura_de_Repetição;
+
 public class Exercicio_01 {
     public static void main(String[] args) {
         int numero = 0;
