@@ -29,6 +29,8 @@ public class Exercicio_46 {
             System.out.printf("O consumo está normal.");
         } else if (calculaConsumo > 16) {
             System.out.printf("O consumo está anormal.");
+        } else if (calculaConsumo < 10) {
+            System.out.printf("Valor inválido. Encerrando operação...");
         }
     }
 }
