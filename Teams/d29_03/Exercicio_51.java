@@ -24,7 +24,7 @@ public class Exercicio_51 {
         final int horasExtras = leitor.nextInt();
 
         System.out.printf("Informe o valor do salário mínimo: R$ ");
-        final float valorSalarioMinimo = leitor.nextInt();
+        final float valorSalarioMinimo = leitor.nextFloat();
         leitor.close();
 
         final double valorHoraTrabalhada = (0.125f * valorSalarioMinimo);
