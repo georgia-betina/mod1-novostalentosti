@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Exercicio_54 {
     public static void main(String[] args) {
     
@@ -38,5 +40,59 @@ public class Exercicio_54 {
     estadual em reais. */
 
     System.out.printf("Informe o preço original do produto em dólar: $ ");
+    Scanner leitor = new Scanner(System.in);
+    final float precoOriginalDolar = leitor.nextFloat();
+
+    System.out.printf("Informe a cotação em dólar atual: ");
+    final float cotacaoDolar = leitor.nextFloat();
+
+    System.out.printf("Informe o preço do transporte em reais: R$ ");
+    final float precoTransporte = leitor.nextFloat();
+
+    System.out.printf("Informe o tipo de imposto de acordo com os códigos a seguir:%n1 - IPI%n2 - ICMS%n3 - Ambos IPI e ICMS%n%nCódigo: ");
+    final int codigoImposto = leitor.nextInt();
+    leitor.close();
+
+    final double conversaoParaReal = precoOriginalDolar * cotacaoDolar;
+
+    System.out.printf("O preço do produto em reais é R$ %.2f.", conversaoParaReal);
+
+    final float imposto1_5 = 0.015f;
+    final float imposto2 = 0.02f;
+    final float imposto3_5 = 0.035f;
+    final float imposto5 = 0.05f;
+    double valorImpostoFederal = 0;
+
+    switch(codigoImposto) {
+        case 1:
+            if (conversaoParaReal <= 3000) {
+                valorImpostoFederal = conversaoParaReal * imposto1_5;
+            } else if (conversaoParaReal > 3000) {
+                valorImpostoFederal = conversaoParaReal * imposto2;
+            }
+            break;
+        case 2:
+            if (conversaoParaReal < 1500) {
+                valorImpostoFederal = conversaoParaReal * imposto2;
+            } else if (conversaoParaReal >= 1500) {
+                valorImpostoFederal = conversaoParaReal * imposto3_5;
+            }
+            break;
+        case 3:
+            valorImpostoFederal = conversaoParaReal * imposto5;
+            break;
+        default:
+            System.out.printf("Código inválido. Encerrando operação...");
+    }
+
+    System.out.printf(" O valor do imposto federal é R$ %.2f.", valorImpostoFederal);
+
+    final double valorImpostoEstadual = ((float)2/(float)7) * valorImpostoFederal;
+
+    System.out.printf(" O valor do imposto estadual é R$ %.2f.", valorImpostoEstadual);
+
+    final double precoFinal = conversaoParaReal + valorImpostoEstadual + valorImpostoFederal + precoTransporte;
+
+    System.out.printf(" O preço final é R$ %.2f.", precoFinal);
     }
 }
