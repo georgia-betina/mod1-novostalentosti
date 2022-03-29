@@ -17,6 +17,34 @@ public class Exercicio_53 {
         Maior que R$ 700,00                                  |             12%
         */
 
+        /* 
+        b. A Gratificação conforme a tabela a seguir:
+        Salário Base                    |Tempo de Serviço                   |Gratificação
+        --------------------------------+-----------------------------------+-----------------------------------------
+        Superior a R$500,00             |Até 3 anos (inclusive)             |2% do salário base mais R$ R$ 50,00 reais
+                                        +-----------------------------------+-----------------------------------------
+                                        |Mais de 3 anos                     |3% do salário base mais R$ 60,00 reais
+        --------------------------------+-----------------------------------+-----------------------------------------
+        Até R$ 500,00 (inclusive)       |Até 3 anos (inclusive)             |5% do salário base mais R$ 23 reais
+                                        +-----------------------------------+-----------------------------------------
+                                        |Entre 3 e 6 anos                   |6% do salário base mais R$ 35,00 reais
+                                        +-----------------------------------+-----------------------------------------
+                                        |De 6 anos para cima (inclusive)    |10% do salário base mais R$ 33 reais
+        */
+
+        /*
+        c. Calcule o valor do auxilio alimentação:
+        Tempo de Serviço             |Valor do auxilio alimentação
+        -----------------------------+----------------------------
+        Até 10 anos (inclusive)      |4% salário Base
+        -----------------------------+----------------------------
+        Mais de 10 anos              |6% salário Base
+        */
+
+        /*
+        d. Calcule o salário líquido, subtraindo o imposto e somando a gratificação, o auxilio alimentação ao salário base.
+        */
+
         System.out.printf("Informe o seu nome: ");
         Scanner leitor = new Scanner(System.in);
         final String nomeUsuario = leitor.nextLine();
@@ -33,32 +61,72 @@ public class Exercicio_53 {
         final float imposto10 = 0.1f;
         final float imposto12 = 0.12f;
 
-        double aplicaImposto, novoSalario;
+        final float gratificacao2 = 0.02f;
+        final int gratificacao50 = 50;
 
-        if (salarioBase <= 200) {
-            System.out.printf("Você está isento de imposto sobre o salário.");
+        final float gratificacao3 = 0.03f;
+        final int gratificacao60 = 60;
+
+        final float gratificacao5 = 0.05f;
+        final int gratificacao23 = 23;
+
+        final float gratificacao6 = 0.06f;
+        final int gratificacao35 = 35;
+
+        final float gratificacao10 = 0.1f;
+        final int gratificacao33 = 33;
+
+        final float alimentacaoAte10anos = 0.04f;
+        final float alimentacaoMaiorQue10anos = 0.06f;
+
+        double imposto = 0, gratificacao = 0, auxilioAlimentacao = 0;
+
+        if (salarioBase <= 200) { // Calcula o imposto
+            imposto = 0;
         } else if (salarioBase > 200 && salarioBase <= 450) {
-            aplicaImposto = salarioBase * imposto3;
-            novoSalario = salarioBase - aplicaImposto;
-
-            System.out.printf("Olá, %s, com %d ano(s) de serviço. Seu novo salário é de R$ %.2f.", nomeUsuario, tempoServico, novoSalario);
+            imposto = salarioBase * imposto3;
         } else if (salarioBase > 450 && salarioBase < 700) {
-            aplicaImposto = salarioBase * imposto8;
-            novoSalario = salarioBase - aplicaImposto;
-
-            System.out.printf("Olá, %s, com %d ano(s) de serviço. Seu novo salário é de R$ %.2f.", nomeUsuario, tempoServico, novoSalario);
+            imposto = salarioBase * imposto8;
         } else if (salarioBase == 700) {
-            aplicaImposto = salarioBase * imposto10;
-            novoSalario = salarioBase - aplicaImposto;
-
-            System.out.printf("Olá, %s, com %d ano(s) de serviço. Seu novo salário é de R$ %.2f.", nomeUsuario, tempoServico, novoSalario);
+            imposto = salarioBase * imposto10;
         } else if (salarioBase > 700) {
-            aplicaImposto = salarioBase * imposto12;
-            novoSalario = salarioBase - aplicaImposto;
-
-            System.out.printf("Olá, %s, com %d ano(s) de serviço. Seu novo salário é de R$ %.2f.", nomeUsuario, tempoServico, novoSalario);
+            imposto = salarioBase * imposto12;
         } else {
             System.out.printf("Valor inválido. Encerrando operação...");
         }
+
+        if (salarioBase > 500) { // Calcula a gratificação
+            if (tempoServico <= 3) {
+                gratificacao = salarioBase * gratificacao2;
+                gratificacao = gratificacao + (float)gratificacao50;
+            } else if (tempoServico > 3) {
+                gratificacao = salarioBase * gratificacao3;
+                gratificacao = gratificacao + (float)gratificacao60;
+            }
+        } else if (salarioBase <= 500) {
+            if (tempoServico <= 3) {
+                gratificacao = salarioBase * gratificacao5;
+                gratificacao = gratificacao + (float)gratificacao23;
+            } else if (tempoServico > 3 && tempoServico < 6) {
+                gratificacao = salarioBase * gratificacao6;
+                gratificacao = gratificacao + (float)gratificacao35;
+            } else if (tempoServico >= 6) {
+                gratificacao = salarioBase * gratificacao10;
+                gratificacao = gratificacao + (float)gratificacao33;
+            } else {
+                System.out.printf("Valor inválido. Encerrando operação...");
+            }
+        }
+        
+        if (tempoServico <= 10) { // Calcula o auxílio alimentação
+            auxilioAlimentacao = salarioBase * alimentacaoAte10anos;
+        } else if (tempoServico > 10) {
+            auxilioAlimentacao = salarioBase * alimentacaoMaiorQue10anos;
+        } else {
+            System.out.printf("Valor inválido. Encerrando operação...");
+        }
+
+        final double salarioLiquido = salarioBase - imposto + gratificacao + auxilioAlimentacao;
+        System.out.printf("Olá, %s, seu salário líquido é de R$ %.2f.", nomeUsuario, salarioLiquido);
     }
 }
