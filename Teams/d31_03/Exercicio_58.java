@@ -11,7 +11,13 @@ public class Exercicio_58 {
 
         System.out.printf("Informe um número: ");
         Scanner leitor = new Scanner(System.in);
-        
+        final int entradaNumero = (int)leitor.nextFloat();
         leitor.close();
+
+        int contador = 0;
+        while (contador < entradaNumero) {
+            contador++;
+            System.out.println(contador);
+        }
     }
 }
