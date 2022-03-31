@@ -1,3 +1,5 @@
+package Teams.d29_03;
+
 import java.util.Scanner;
 
 public class Exercicio_54 {
