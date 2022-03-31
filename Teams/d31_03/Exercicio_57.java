@@ -22,19 +22,37 @@ public class Exercicio_57 {
 
         leitor.close();
 
-        // CONTADOR ATÉ 5
+        //double formula += 1 + 1/(fatorial);
+
+        // FATORIAL DE ACORDO COM O CONTADOR
         int contador1 = 1;
         while (contador1 < entradaNumero) {
+            System.out.println("O contador é: " + contador1);
+            int contador = contador1;
+            int fatorial = 1;
+            for(int i=1; i!=contador1; i++){
+                fatorial *= contador;
+                contador--;
+            }
             contador1++;
-            System.out.println(contador1);
+            System.out.println("O fatorial é: " + fatorial);
+        }
+
+        // CONTADOR ATÉ ENTRADA NUMERO
+        int contador2 = 1;
+        while (contador1 < entradaNumero) {
+            contador2++;
+            System.out.println(contador2);
         }
 
         // FATORIAL
-        int contador = entradaNumero;
+        int contador = contador1;
         int fatorial = entradaNumero;
         for(int i=1; i!=entradaNumero; i++){
             contador--;
             fatorial *= contador;
         }
+
+        //System.out.println(fatorial);
     }
 }
