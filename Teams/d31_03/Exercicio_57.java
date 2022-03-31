@@ -22,12 +22,11 @@ public class Exercicio_57 {
 
         leitor.close();
 
-        //double formula += 1 + 1/(fatorial);
-
         // FATORIAL DE ACORDO COM O CONTADOR
+        double formula = 0;
         int contador1 = 1;
-        while (contador1 < entradaNumero) {
-            System.out.println("O contador é: " + contador1);
+        while (contador1 <= entradaNumero) {
+            //System.out.println("O contador é: " + contador1);
             int contador = contador1;
             int fatorial = 1;
             for(int i=1; i!=contador1; i++){
@@ -35,23 +34,27 @@ public class Exercicio_57 {
                 contador--;
             }
             contador1++;
-            System.out.println("O fatorial é: " + fatorial);
+            formula += 1 + ((float)1/fatorial);
+            //System.out.println("O fatorial é: " + fatorial);
+            //System.out.printf("A formula é %.2f%n", formula);
         }
 
-        // CONTADOR ATÉ ENTRADA NUMERO
+        System.out.printf("N = %d%nA fórmula é E = 1 + 1/(1!) + 1/(2!) + 1/(3!) + ... + 1/(N!)%nE = %.2f", entradaNumero, formula);
+
+        /* // CONTADOR ATÉ ENTRADA NUMERO
         int contador2 = 1;
         while (contador1 < entradaNumero) {
             contador2++;
             System.out.println(contador2);
-        }
+        } */
 
-        // FATORIAL
+        /* // FATORIAL
         int contador = contador1;
         int fatorial = entradaNumero;
         for(int i=1; i!=entradaNumero; i++){
             contador--;
             fatorial *= contador;
-        }
+        } */
 
         //System.out.println(fatorial);
     }
