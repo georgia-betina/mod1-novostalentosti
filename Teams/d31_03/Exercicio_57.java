@@ -23,7 +23,7 @@ public class Exercicio_57 {
         leitor.close();
 
         // FATORIAL DE ACORDO COM O CONTADOR
-        double formula = 0;
+        double formula = 1;
         int contador1 = 1;
         while (contador1 <= entradaNumero) {
             //System.out.println("O contador é: " + contador1);
@@ -34,7 +34,7 @@ public class Exercicio_57 {
                 contador--;
             }
             contador1++;
-            formula += 1 + ((float)1/fatorial);
+            formula += (float)1/fatorial;
             //System.out.println("O fatorial é: " + fatorial);
             //System.out.printf("A formula é %.2f%n", formula);
         }
