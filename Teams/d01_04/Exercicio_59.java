@@ -8,6 +8,11 @@ public class Exercicio_59 {
         finalizando em 100 graus Celsius. O programa deverá
         apresentar os valores das duas temperaturas. */
 
-        
+        float celsius = 10;
+
+        for (celsius = 10; celsius <=100; celsius += 10) {
+            double calculaFahrenheit = (celsius * (float)1.8) + 32;
+            System.out.printf("Celsius é %.0f °C, Fahrenheit é %.0f °F.%n", celsius, calculaFahrenheit);
+        }
     }
 }
