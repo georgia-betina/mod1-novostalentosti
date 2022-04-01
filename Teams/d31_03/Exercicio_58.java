@@ -9,15 +9,30 @@ public class Exercicio_58 {
         ser lidos a seguir. Para cada número lido, mostre
         o valor lido e o fatorial desse valor. */
 
-        System.out.printf("Informe um número: ");
+        int entradaNumero = 0;
         Scanner leitor = new Scanner(System.in);
-        final int entradaNumero = (int)leitor.nextFloat();
+
+        do {
+            System.out.printf("Informe um número inteiro e positivo: ");
+            entradaNumero = (int)leitor.nextFloat();
+            if (entradaNumero < 0) {
+                System.out.printf("Valor inválido. ");
+            }
+        } while (entradaNumero < 0);
+
         leitor.close();
 
-        int contador = 0;
+        //FATORIAL
+        System.out.printf("A quantidade de números inteiros e positivos a ser mostrada é: %d%n", entradaNumero);
+        int contador = 0; // conta até a entrada
+        double fatorial = 1;
         while (contador < entradaNumero) {
             contador++;
-            System.out.println(contador);
+            for (int ii=1; ii <= contador; ii++) {
+                fatorial *= ii;
+            }
+            System.out.printf("Número %d, fatorial: %.0f%n", contador, fatorial);
+            fatorial = 1;
         }
     }
 }
