@@ -18,26 +18,28 @@ public class Exercicio_66 {
         int faixaFinal = 0;
         int numero1 = 0;
         int numero2 = 0;
-        int contador = 0;
+        int somaImpar = 0;
 
         Scanner leitor = new Scanner(System.in);
         System.out.printf("Informe um valor inteiro: ");
         numero1 = leitor.nextInt();
 
-        System.out.printf("Informe outro valor inteiro:");
+        System.out.printf("Informe outro valor inteiro: ");
         numero2 = leitor.nextInt();
 
-        if (contador == 0) {
-            faixaInicial = Math.min(numero1, numero2);
-            faixaFinal = Math.max(numero1, numero2);
-            contador++;
-        }
-
-        for (int i = faixaInicial; i < faixaFinal; i++) {
-            faixaInicial++;
-            System.out.println(faixaInicial);
-        }
-
         leitor.close();
+
+        faixaInicial = Math.min(numero1, numero2);
+        faixaFinal = Math.max(numero1, numero2);
+
+        int valorVariado = faixaInicial;
+
+        while (valorVariado < (faixaFinal - 1)) {
+            valorVariado++;
+            if (valorVariado % 2 != 0) {
+                somaImpar += valorVariado;
+            }
+        }
+        System.out.printf("A soma dos números ímpares entre as faixas %d e %d é %d.", faixaInicial, faixaFinal, somaImpar);
     }
 }
