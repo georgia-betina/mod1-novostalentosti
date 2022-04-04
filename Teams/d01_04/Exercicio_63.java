@@ -23,17 +23,23 @@ public class Exercicio_63 {
         double somaParaMedia = 0;
         int somaPares = 0;
         double maiorEntrada = 0;
-        double menorEntrada;
+        double menorEntrada = 0;
+        int contadorParaMaiorMenor = 0;
 
         do {
             System.out.printf("Digite um número para gravar e 30000 para sair: ");
             entradaNumero = leitor.nextFloat();
-            menorEntrada = entradaNumero;
             if (entradaNumero != 30000) {
                 soma += entradaNumero;
 
-                maiorEntrada = Math.max(entradaNumero, maiorEntrada);
-                menorEntrada = Math.min(entradaNumero, menorEntrada);
+                if (contadorParaMaiorMenor == 0) {
+                    maiorEntrada = entradaNumero;
+                    menorEntrada = entradaNumero;
+                    contadorParaMaiorMenor++;
+                } else if (contadorParaMaiorMenor != 0) {
+                    maiorEntrada = Math.max(maiorEntrada, entradaNumero);
+                    menorEntrada = Math.min(menorEntrada, entradaNumero);
+                }
 
                 entradaNumero = Math.abs(entradaNumero);
 
