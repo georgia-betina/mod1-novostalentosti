@@ -1,5 +1,7 @@
 package Teams.d04_04;
 
+import java.util.Scanner;
+
 public class Exercicio_64 {
     public static void main(String[] args) {
         /* 64) Faça um algoritmo que calcule a multiplicação
@@ -12,6 +14,20 @@ public class Exercicio_64 {
         seja, soma-se um elemento com ele próprio o número
         de vezes do segundo elemento. */
 
-        
+        Scanner leitor = new Scanner(System.in);
+        System.out.printf("Digite um número: ");
+        final float numero1 = leitor.nextFloat();
+
+        System.out.printf("Digite outro número a ser multiplicado pelo primeiro: ");
+        final float numero2 = leitor.nextFloat();
+
+        leitor.close();
+        double multiplicacao = 0;
+
+        for (int i = 0; i < numero2; i++) {
+            multiplicacao += numero1;
+        }
+
+        System.out.printf("A multiplicação de %.1f por %.1f é: %.1f", numero1, numero2, multiplicacao);
     }
 }
