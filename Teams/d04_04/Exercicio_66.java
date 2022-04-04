@@ -16,8 +16,8 @@ public class Exercicio_66 {
 
         int faixaInicial = 0;
         int faixaFinal = 0;
-        int numero1 = 0;
-        int numero2 = 0;
+        int numero1 = 0; // entrada 1
+        int numero2 = 0; // entrada 2
         int somaImpar = 0;
 
         Scanner leitor = new Scanner(System.in);
@@ -29,15 +29,15 @@ public class Exercicio_66 {
 
         leitor.close();
 
-        faixaInicial = Math.min(numero1, numero2);
-        faixaFinal = Math.max(numero1, numero2);
+        faixaInicial = Math.min(numero1, numero2); // calcula qual numero é o menor p atribuir como faixaInicial
+        faixaFinal = Math.max(numero1, numero2); // calcula qual numero é o maior p atribuir como faixaFinal
 
-        int valorVariado = faixaInicial;
+        int contador = faixaInicial; // variavel que é utilizada como contador
 
-        while (valorVariado < (faixaFinal - 1)) {
-            valorVariado++;
-            if (valorVariado % 2 != 0) {
-                somaImpar += valorVariado;
+        while (contador < (faixaFinal - 1)) { // - 1 porque caso contrário, considerará a faixaInicial na conta
+            contador++;
+            if (contador % 2 != 0) {
+                somaImpar += contador;
             }
         }
         System.out.printf("A soma dos números ímpares entre as faixas %d e %d é %d.", faixaInicial, faixaFinal, somaImpar);
