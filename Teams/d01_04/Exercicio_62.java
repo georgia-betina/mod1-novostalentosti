@@ -11,16 +11,22 @@ public class Exercicio_62 {
 
         int entradaNumero = 0;
         int maiorEntrada = 0;
-        int menorEntrada;
+        int menorEntrada = 0;
+        int contador = 0;
 
         Scanner leitor = new Scanner(System.in);
         do {
             System.out.printf("Digite um número inteiro e positivo: ");
-            menorEntrada = entradaNumero;
             entradaNumero = leitor.nextInt();
             if (entradaNumero > 0) {
-                maiorEntrada = Math.max(entradaNumero, maiorEntrada);
-                menorEntrada = Math.min(entradaNumero, menorEntrada);
+                if (contador == 0) {
+                    maiorEntrada = entradaNumero;
+                    menorEntrada = entradaNumero;
+                    contador++;
+                } else if (contador != 0) {
+                    maiorEntrada = Math.max(maiorEntrada, entradaNumero);
+                    menorEntrada = Math.min(menorEntrada, entradaNumero);
+                }
             }
         } while (entradaNumero > 0);
         leitor.close();
