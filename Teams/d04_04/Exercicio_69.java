@@ -12,5 +12,6 @@ public class Exercicio_69 {
         seja, soma-se um elemento com ele próprio o número
         de vezes do segundo elemento. */
 
+        // REPETIDO
     }
 }
