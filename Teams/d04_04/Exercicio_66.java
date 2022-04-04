@@ -19,6 +19,7 @@ public class Exercicio_66 {
         int numero1 = 0; // entrada 1
         int numero2 = 0; // entrada 2
         int somaImpar = 0;
+        int transformaAbsoluto = 0;
 
         Scanner leitor = new Scanner(System.in);
         System.out.printf("Informe um valor inteiro: ");
@@ -37,7 +38,8 @@ public class Exercicio_66 {
         while (contador < (faixaFinal - 1)) { // - 1 porque caso contrário, considerará a faixaInicial na conta
             contador++;
             if (contador % 2 != 0) {
-                somaImpar += contador;
+                transformaAbsoluto = Math.abs(contador);
+                somaImpar += transformaAbsoluto;
             }
         }
         System.out.printf("A soma dos números ímpares entre as faixas %d e %d é %d.", faixaInicial, faixaFinal, somaImpar);
