@@ -1,5 +1,7 @@
 package Teams.d08_04;
 
+import java.util.Scanner;
+
 public class Exercicio_81 {
     public static void main(String[] args) {
         /* 81) Faça um programa que carregue dois vetores, X e Y,
@@ -17,6 +19,37 @@ public class Exercicio_81 {
         o elemento de mesma posição em Y)
         - a interseção entre X e Y (apenas os elementos que aparecem
         nos dois vetores) */
-        
+
+        Scanner leitor = new Scanner(System.in);
+        int[] x = new int[10];
+        int[] y = new int[10];
+        int contador = 0;
+
+        for (int i = 0; i < x.length; i++) {
+            System.out.printf("Informe um número: ");
+            if (contador == 0) {
+                x[i] = leitor.nextInt();
+                contador++;
+            } else if (contador != 0) {
+                x[i] = leitor.nextInt();
+                for (int j = i; j > 0; j--) {
+                    while (x[i] == x[i - 1] || x[i] == x[0]) {
+                        System.out.printf("Número repetido. Informe outro: ");
+                        x[i] = leitor.nextInt();
+                    }
+                }
+                /* while ( == x[i]) {
+                    
+                } */
+            }
+            System.out.printf("A casa é %d, o número colocado é %d%n%n", i, x[i]);
+        }
+
+        for (int i = 0; i < y.length; i++) {
+            System.out.printf("Informe outro número: ");
+            y[i] = leitor.nextInt();
+        }
+
+        leitor.close();
     }
 }
