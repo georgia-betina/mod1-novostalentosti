@@ -14,15 +14,15 @@ public class teste {
 
         for (int i = 0; i < listaNumeros.length; i++) {
             System.out.printf("Informe um número: ");
-            listaNumeros[i] = leitor.nextInt();
-            for (int j = 0; j < listaNumeros.length; j++) {
-                if(listaNumeros[i] != listaNumeros[j]) {
-                    listaNumeros[i] = leitor.nextInt();
-                    listaNumeros[j] = leitor.nextInt();
-                } else {
-                    System.out.printf("Número repetido. Informe outro: ");
-                    listaNumeros[i] = leitor.nextInt();
-                    listaNumeros[j] = leitor.nextInt();
+            if (contador == 0) {
+                listaNumeros[i] = leitor.nextInt();
+                listaNumeros2[i] = leitor.nextInt();
+                contador++;
+            } else if (contador != 0) {
+                while (contador == 1) {
+                    while (listaNumeros[i] == listaNumeros2[i-1]) {
+                        
+                    }
                 }
             }
             /* if (contador == 0) {
