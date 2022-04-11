@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class teste {
     public static void main(String[] args) {
-        int numeroTeste = 1;
-        int numeroTeste2 = 2;
+        //int numeroTeste = 1;
+        //int numeroTeste2 = 2;
         int[] listaNumeros = new int[10];
         int[] listaNumeros2 = new int[10];
         int contador = 0;
@@ -21,7 +21,8 @@ public class teste {
             } else if (contador != 0) {
                 while (contador == 1) {
                     while (listaNumeros[i] == listaNumeros2[i-1]) {
-                        
+                        System.out.printf("Número repetido. Informe outro número: ");
+                        listaNumeros[i] = leitor.nextInt();
                     }
                 }
             }
