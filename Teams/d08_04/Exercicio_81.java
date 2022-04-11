@@ -23,7 +23,27 @@ public class Exercicio_81 {
         Scanner leitor = new Scanner(System.in);
         int[] x = new int[10];
         int[] y = new int[10];
+        int contadorContrario = 9;
         int contador = 0;
+
+        for (int i = 0; i < x.length; i++) {
+            System.out.printf("Informe um número: ");
+            if (contador == 0) {
+                x[i] = leitor.nextInt();
+                y[contadorContrario] = leitor.nextInt();
+                contador++;
+            } else if (contador != 0) {
+                x[i] = leitor.nextInt();
+                do {
+                    while (x[i] == y[contadorContrario]) {
+                        System.out.printf("Número repetido. Informe outro número: ");
+                        x[i] = leitor.nextInt();
+                        contadorContrario--;
+                    }
+                    break;
+                } while (true);
+            }                        
+        }
 
         for (int i = 0; i < x.length; i++) {
             System.out.printf("Informe um número: ");
