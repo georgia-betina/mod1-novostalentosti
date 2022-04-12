@@ -21,6 +21,68 @@ public class Exercicio_81 {
         nos dois vetores) */
 
         Scanner leitor = new Scanner(System.in);
+        int[] x = new int[5];
+        int[] y = new int[5];
+        int[] z = new int[20];
+        int contador1 = 0;
+        int conta0 = 0;
+        int multiplica = 1;
+        int soma = 0;
+
+            for (int i = 0; i < 5; i++) {
+                System.out.printf("Informe um número (X): ");
+                x[i] = leitor.nextInt();
+            }
+            for (int k = 0; k < 5; k++) {
+                System.out.printf("Informe um número (Y): ");
+                y[k] = leitor.nextInt();
+            }
+
+            int contador2 = 4;
+            for (int i = 0; i < 5; i++) {
+                if (x[i] != y[i] && y[contador2] != x[contador2-1]) {
+                    System.out.println("diferente: " + x[i]);
+                }
+            }
+
+            // SOMA
+            for (int i = 0; i < 5; i++) {
+                soma = x[i] + y[i];
+                System.out.println(soma);
+            }
+
+            // MULTIPLICAÇÃO
+            for (int i = 0; i < 5; i++) {
+                multiplica = x[i] * y[i];
+                System.out.println(multiplica);
+            }
+
+            System.out.printf("A interseção é: ");
+            for (int i = 0; i < 5; i++) {
+                if (x[i] == y[i]) {
+                    System.out.printf("%d", x[i]);
+                }
+            }
+
+            for (int j = 0; j < 5; j++) {
+
+            z[contador1] = x[conta0];
+            contador1++;
+            z[contador1] = y[conta0];
+            contador1++;
+            conta0++;
+            }
+
+        leitor.close();
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println(z[i]);
+        }
+
+
+
+
+        /* Scanner leitor = new Scanner(System.in);
         int[] x = new int[10];
         int[] y = new int[10];
         int contadorContrario = 9;
@@ -60,7 +122,7 @@ public class Exercicio_81 {
                 }
                 /* while ( == x[i]) {
                     
-                } */
+                }
             }
             System.out.printf("A casa é %d, o número colocado é %d%n%n", i, x[i]);
         }
@@ -70,6 +132,6 @@ public class Exercicio_81 {
             y[i] = leitor.nextInt();
         }
 
-        leitor.close();
+        leitor.close(); */
     }
 }
