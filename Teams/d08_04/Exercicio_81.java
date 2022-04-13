@@ -11,22 +11,19 @@ public class Exercicio_81 {
 
         - a união de X com Y (todos os elementos de X e os elementos
         de Y que não estejam em X)
-        - a diferença entre X e Y (todos os elementos de X que não
+        - OK - a diferença entre X e Y (todos os elementos de X que não
         existam em Y)
-        - a soma entre X e Y (soma de cada elemento de X com o elemento
+        - OK - a soma entre X e Y (soma de cada elemento de X com o elemento
         de mesma posição em Y)
-        - produto entre X e Y (multiplicação de cada elemento de X com
+        - OK - produto entre X e Y (multiplicação de cada elemento de X com
         o elemento de mesma posição em Y)
-        - a interseção entre X e Y (apenas os elementos que aparecem
+        - OK - a interseção entre X e Y (apenas os elementos que aparecem
         nos dois vetores) */
 
         Scanner leitor = new Scanner(System.in);
         int[] x = new int[5];
         int[] y = new int[5];
         int[] z = new int[20];
-        //int entradaNumero = 0;
-        int contador1 = 0;
-        int conta0 = 0;
         int multiplica = 1;
         int soma = 0;
         int contador = 0;
@@ -75,40 +72,43 @@ public class Exercicio_81 {
 
             // DIFERENÇA
             System.out.printf("%nA diferença de X e Y é: ");
-            while (contador != 5) {
-                for (int i = 0; i < x.length; i++) {
-                    if (x[contador] == y[i]) {
-                        break;
-                    } else if (x[contador] != y[i]) {
-                        System.out.println(x[contador]);
-                        break;
-                    }
-                }
-                contador++;
-            }
-
-            System.out.printf("A interseção é: ");
-            for (int i = 0; i < 5; i++) {
-                z[i] = x[i];
-                if (z[i] != y[i]) {
-                    z[i++] = y[i];
+            for (int i = 0; i < x.length; i++) {
+                if (x[i] == y[0]) {
+                } else if (x[i] == y[1]) {
+                } else if (x[i] == y[2]) {
+                } else if (x[i] == y[3]) {
+                } else if (x[i] == y[4]) {
+                } else {
+                    System.out.printf("%d ", x[i]);
                 }
             }
 
-            for (int j = 0; j < 5; j++) {
+            // INTERSEÇÃO
+            System.out.printf("%nA interseção entre X e Y é: ");
+            for (int i = 0; i < x.length; i++) {
+                if (x[i] == y[0]) {
+                    System.out.printf("%d ", x[i]);
+                } else if (x[i] == y[1]) {
+                    System.out.printf("%d ", x[i]);
+                } else if (x[i] == y[2]) {
+                    System.out.printf("%d ", x[i]);
+                } else if (x[i] == y[3]) {
+                    System.out.printf("%d ", x[i]);
+                } else if (x[i] == y[4]) {
+                    System.out.printf("%d ", x[i]);
+                }
+            }
+
+            /*for (int j = 0; j < 5; j++) {
 
             z[contador1] = x[conta0];
             contador1++;
             z[contador1] = y[conta0];
             contador1++;
             conta0++;
-            }
+            }*/
 
         leitor.close();
-
-        for (int i = 0; i < 10; i++) {
-            System.out.println(z[i]);
-        }
 
 
 
