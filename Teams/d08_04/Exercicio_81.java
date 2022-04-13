@@ -9,7 +9,7 @@ public class Exercicio_81 {
         de cada vetor digital, X e Y, não podem estar repetidos.
         Calcule e mostre os seguintes vetores resultantes:
 
-        - a união de X com Y (todos os elementos de X e os elementos
+        - OK a união de X com Y (todos os elementos de X e os elementos
         de Y que não estejam em X)
         - OK - a diferença entre X e Y (todos os elementos de X que não
         existam em Y)
@@ -23,10 +23,8 @@ public class Exercicio_81 {
         Scanner leitor = new Scanner(System.in);
         int[] x = new int[5];
         int[] y = new int[5];
-        int[] z = new int[20];
         int multiplica = 1;
         int soma = 0;
-        int contador = 0;
 
             for (int i = 0; i < 5; i++) {
                 System.out.printf("Informe um número (X): ");
@@ -39,39 +37,53 @@ public class Exercicio_81 {
                 y[k] = leitor.nextInt();
             }
 
-            int contador2 = 4;
-            for (int i = 0; i < 5; i++) {
-                if (x[i] != y[i] && y[contador2] != x[contador2-1]) {
-                    System.out.println("diferente: " + x[i]);
-                }
-            }
-
-            // SOMA
-            for (int i = 0; i < 5; i++) {
-                soma = x[i] + y[i];
-                System.out.println(soma);
-            }
-
-            // MULTIPLICAÇÃO
-            for (int i = 0; i < 5; i++) {
-                multiplica = x[i] * y[i];
-                System.out.println(multiplica);
-            }
-
             // LISTA (X)
-            System.out.printf("(X) = ");
+            System.out.printf("%n%n(X) = ");
             for (int i = 0; i < x.length; i++) {
                 System.out.printf("%d ", x[i]);
             }
 
             // LISTA (Y)
-            System.out.printf("(Y) = ");
+            System.out.printf("%n(Y) = ");
             for (int i = 0; i < x.length; i++) {
                 System.out.printf("%d ", y[i]);
             }
 
+            // SOMA
+            System.out.printf("%n%nA soma de (X) com (Y) é: ");
+            for (int i = 0; i < 5; i++) {
+                soma = x[i] + y[i];
+                if (i <= 3) {
+                    System.out.printf("%d - ", soma);
+                } else if (i == 4) {
+                    System.out.printf("%d", soma);
+                }
+            }
+
+            // MULTIPLICAÇÃO
+            System.out.printf("%nA multiplicação de (X) com (Y) é: ");
+            for (int i = 0; i < 5; i++) {
+                multiplica = x[i] * y[i];
+                if (i <= 3) {
+                    System.out.printf("%d - ", multiplica);
+                } else if (i == 4) {
+                    System.out.printf("%d", multiplica);
+                }
+            }
+
+            // UNIÃO
+            System.out.printf("%nA união de (X) e (Y) é: ");
+            for (int i = 0; i < x.length; i++) {
+                System.out.printf("%d ", x[i]);
+            }
+            for (int i = 0; i < x.length; i++) {
+                if (y[i] != x[0] && y[i] != x[1] && y[i] != x[2] && y[i] != x[3] && y[i] != x[4]) {
+                    System.out.printf("%d ", y[i]);
+                }
+            }
+
             // DIFERENÇA
-            System.out.printf("%nA diferença de X e Y é: ");
+            System.out.printf("%nA diferença de (X) e (Y) é: ");
             for (int i = 0; i < x.length; i++) {
                 if (x[i] == y[0]) {
                 } else if (x[i] == y[1]) {
@@ -84,7 +96,7 @@ public class Exercicio_81 {
             }
 
             // INTERSEÇÃO
-            System.out.printf("%nA interseção entre X e Y é: ");
+            System.out.printf("%nA interseção entre (X) e (Y) é: ");
             for (int i = 0; i < x.length; i++) {
                 if (x[i] == y[0]) {
                     System.out.printf("%d ", x[i]);
@@ -99,70 +111,7 @@ public class Exercicio_81 {
                 }
             }
 
-            /*for (int j = 0; j < 5; j++) {
-
-            z[contador1] = x[conta0];
-            contador1++;
-            z[contador1] = y[conta0];
-            contador1++;
-            conta0++;
-            }*/
-
         leitor.close();
 
-
-
-
-        /* Scanner leitor = new Scanner(System.in);
-        int[] x = new int[10];
-        int[] y = new int[10];
-        int contadorContrario = 9;
-        int contador = 0;
-
-        for (int i = 0; i < x.length; i++) {
-            System.out.printf("Informe um número: ");
-            if (contador == 0) {
-                x[i] = leitor.nextInt();
-                y[contadorContrario] = leitor.nextInt();
-                contador++;
-            } else if (contador != 0) {
-                x[i] = leitor.nextInt();
-                do {
-                    while (x[i] == y[contadorContrario]) {
-                        System.out.printf("Número repetido. Informe outro número: ");
-                        x[i] = leitor.nextInt();
-                        contadorContrario--;
-                    }
-                    break;
-                } while (true);
-            }                        
-        }
-
-        for (int i = 0; i < x.length; i++) {
-            System.out.printf("Informe um número: ");
-            if (contador == 0) {
-                x[i] = leitor.nextInt();
-                contador++;
-            } else if (contador != 0) {
-                x[i] = leitor.nextInt();
-                for (int j = i; j > 0; j--) {
-                    while (x[i] == x[i - 1] || x[i] == x[0]) {
-                        System.out.printf("Número repetido. Informe outro: ");
-                        x[i] = leitor.nextInt();
-                    }
-                }
-                /* while ( == x[i]) {
-                    
-                }
-            }
-            System.out.printf("A casa é %d, o número colocado é %d%n%n", i, x[i]);
-        }
-
-        for (int i = 0; i < y.length; i++) {
-            System.out.printf("Informe outro número: ");
-            y[i] = leitor.nextInt();
-        }
-
-        leitor.close(); */
     }
 }

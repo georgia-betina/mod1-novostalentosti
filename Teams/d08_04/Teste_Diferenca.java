@@ -18,7 +18,7 @@ public class Teste_Diferenca {
             }
         } */
 
-        for (int i = 0; i < 4; i++) {
+        /* for (int i = 0; i < 4; i++) {
             if (listaNumeros[i] == listaNumeros2[0]) {
                 System.out.println(listaNumeros[i]);
             } else if (listaNumeros[i] == listaNumeros2[1]) {
@@ -28,7 +28,11 @@ public class Teste_Diferenca {
             } else if (listaNumeros[i] == listaNumeros2[3]) {
                 System.out.println(listaNumeros[i]);
             }
-        }
+        } */
+
+        
+
+        
 
 
         /*
