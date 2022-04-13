@@ -1,6 +1,6 @@
 package Teams.d08_04;
 
-public class Teste_Intersecao {
+public class Teste_Diferenca {
     public static void main(String[] args) {
         int[] listaNumeros = new int[]{2,3,4,5};
         int[] listaNumeros2 = new int[]{2,4,9,8};
