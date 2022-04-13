@@ -6,15 +6,6 @@ public class Exercicio_Nao_Repetir_Resumo {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
         int[] x = new int[10];
-        int[] y = new int[10];
-        int multiplica = 1;
-        int soma = 0;
-
-            /* for (int i = 0; i < 5; i++) {
-                System.out.printf("Informe um número (X): ");
-                x[i] = leitor.nextInt();
-                
-            } */
 
             for (int i = 0; i < x.length; i++) {
                 System.out.printf("Informe um número (X): ");
