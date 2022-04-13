@@ -61,7 +61,32 @@ public class Exercicio_81 {
                 System.out.println(multiplica);
             }
 
-            // INTERSEÇÃO
+            // LISTA (X)
+            System.out.printf("(X) = ");
+            for (int i = 0; i < x.length; i++) {
+                System.out.printf("%d ", x[i]);
+            }
+
+            // LISTA (Y)
+            System.out.printf("(Y) = ");
+            for (int i = 0; i < x.length; i++) {
+                System.out.printf("%d ", y[i]);
+            }
+
+            // DIFERENÇA
+            System.out.printf("%nA diferença de X e Y é: ");
+            while (contador != 5) {
+                for (int i = 0; i < x.length; i++) {
+                    if (x[contador] == y[i]) {
+                        break;
+                    } else if (x[contador] != y[i]) {
+                        System.out.println(x[contador]);
+                        break;
+                    }
+                }
+                contador++;
+            }
+
             System.out.printf("A interseção é: ");
             for (int i = 0; i < 5; i++) {
                 z[i] = x[i];
