@@ -1,5 +1,7 @@
 package Teams.d13_04;
 
+import java.util.Scanner;
+
 public class Exercicio_84 {
     public static void main(String[] args) {
         /* 84)Faça um programa que simule um controle bancário.
@@ -38,6 +40,33 @@ public class Exercicio_84 {
         O programa só termina quando for digitada a opção 4 –
         Finalizar o programa. */
 
+        Scanner leitor = new Scanner(System.in);
+        int[] codigosBanco = new int[10];
+        int codigoConta;
+        float valorDeposito;
+        String operacao = "null";
+
+        for (int i = 0; i < codigosBanco.length; i++) {
+            System.out.printf("Informe o código da sua conta: ");
+            codigosBanco[i] = leitor.nextInt();
+        }
+
+        while (operacao != "iv") {
+            System.out.printf("Informe a operação que deseja realizar:%ni. Efetuar depósito%nii. Efetuar saque%niii. Consultar o ativo bancário%niv. Finalizar o programa");
+            operacao = leitor.nextLine();
+
+            switch (operacao) {
+                case "i":
+                    System.out.printf("Informe o código da conta: ");
+                    codigoConta = leitor.nextInt();
+
+                    System.out.printf("Informe o valor a ser depositado: ");
+                    valorDeposito = leitor.nextFloat();
+                    break;
+                
+            }
+        }
         
+        leitor.close();
     }
 }
