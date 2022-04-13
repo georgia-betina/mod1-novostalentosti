@@ -24,15 +24,19 @@ public class Exercicio_81 {
         int[] x = new int[5];
         int[] y = new int[5];
         int[] z = new int[20];
+        //int entradaNumero = 0;
         int contador1 = 0;
         int conta0 = 0;
         int multiplica = 1;
         int soma = 0;
+        int contador = 0;
 
             for (int i = 0; i < 5; i++) {
                 System.out.printf("Informe um número (X): ");
                 x[i] = leitor.nextInt();
+                
             }
+
             for (int k = 0; k < 5; k++) {
                 System.out.printf("Informe um número (Y): ");
                 y[k] = leitor.nextInt();
@@ -57,10 +61,12 @@ public class Exercicio_81 {
                 System.out.println(multiplica);
             }
 
+            // INTERSEÇÃO
             System.out.printf("A interseção é: ");
             for (int i = 0; i < 5; i++) {
-                if (x[i] == y[i]) {
-                    System.out.printf("%d", x[i]);
+                z[i] = x[i];
+                if (z[i] != y[i]) {
+                    z[i++] = y[i];
                 }
             }
 
