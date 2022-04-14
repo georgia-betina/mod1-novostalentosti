@@ -6,30 +6,43 @@ public class Exercicio_Nao_Repetir_Resumo {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
         int[] x = new int[10];
-        int[] elementosArray = new int[10];
         int contador = 0;
-
-        for (int i = 0; i < elementosArray.length; i++) {
-            elementosArray[i] = i;
-        }
+        int fatorial = 1;
 
             for (int i = 0; i < x.length; i++) {
                 System.out.printf("Informe um número (X) - %d: ", i);
                 x[i] = leitor.nextInt();
-                do {
-                    for (int k = 0; k < i; k++) {
-                        if (x[i] == x[k]) {
-                            while (x[i] == x[k]) {
-                                System.out.printf("Número repetido. Informe outro - %d: ", i);
-                                x[i] = leitor.nextInt();
-                            }
+                if (i > 0) {
+                    while (contador < i) {
+                        contador++;
+                        for (int ii=1; ii <= contador; ii++) {
+                            fatorial *= ii;
                         }
                     }
-                    contador++;
-                } while (contador != x.length);
-            }
+
+                    System.out.println(fatorial);
+
+                    for (int j = fatorial-1; j >= 0; j--) {
+                        System.out.println(x[j]);
+                        while (x[i] == x[j]) {
+                            if (x[i] == x[j]) {
+                            System.out.printf("Número repetido. Informe outro: ");
+                            x[i] = leitor.nextInt();
+                            System.out.println(x[i]);
+                            System.out.println(x[j]);
+                        }}
+                    }
+                        
+                    }}
+                /* do {
+                    for (int j = i - 1; j >=0; j--) {
+                        if (x[i] == x[j]) {
+                        System.out.printf("Número repetido. Informe outro: ");
+                        x[i] = leitor.nextInt();
+                        }
+                } while (i <= 9 || i >= 0 && x[i] == x[j]); */
         
-        leitor.close();
+        //leitor.close();
 
                 /* if (i == 1) {
                     do {
