@@ -15,7 +15,7 @@ public class Exercicio_84 {
         posição do vetor de saldos. Depois de fazer a leitura
         dos valores, mostrar o seguinte menu na tela:
 
-        i.    Efetuar depósito
+        i.    Efetuar depósito OK
         ii.    Efetuar saque
         iii.    Consultar o ativo bancário (ou seja, o somatório
         dos saldos de todos os clientes)
@@ -42,43 +42,88 @@ public class Exercicio_84 {
 
         Scanner leitor = new Scanner(System.in);
         int[] codigosBanco = new int[10];
+        float[] saldo = new float[10];
         int codigoConta;
-        float saldo = 0;
         float valorDeposito;
         String operacao = "null";
+        boolean saida = false;
+        float valorSaque;
+        double ativoBancario = 0;
 
         for (int i = 0; i < codigosBanco.length; i++) {
             System.out.printf("Informe o código da sua conta: ");
             codigosBanco[i] = leitor.nextInt();
+            saldo[i] = 0f;
         }
 
-        while (operacao != "iv") {
-            System.out.printf("Informe a operação que deseja realizar:%ni. Efetuar depósito%nii. Efetuar saque%niii. Consultar o ativo bancário%niv. Finalizar o programa");
-            operacao = leitor.nextLine();
+        while (saida == false) {
+            System.out.printf("%nInforme a operação que deseja realizar:%ni. Efetuar depósito%nii. Efetuar saque%niii. Consultar o ativo bancário%niv. Finalizar o programa%n%nOperação: ");
+            operacao = leitor.next();
 
             switch (operacao) {
                 case "i":
                 case "I":
-                case "1":
                     System.out.printf("Informe o código da conta: ");
                     codigoConta = leitor.nextInt();
 
                     for (int i = 0; i < codigosBanco.length; i++) {
-                        if (codigoConta != codigosBanco[i]) {
-                            System.out.printf("Conta não encontrada. Retornando ao menu.");
+                        if (i == 9 && codigoConta != codigosBanco[i]) {
+                            System.out.printf("Conta não encontrada. Retornando ao menu.%n");
+                            break;
+                        } else if (i !=9 && codigoConta == codigosBanco[i]) {
+                            System.out.printf("Informe o valor a ser depositado: R$ ");
+                            valorDeposito = leitor.nextFloat();
+                            saldo[i] += valorDeposito;
+                            System.out.printf("Depósito realizado com sucesso. Retornando ao menu.%n");
                             break;
                         }
                     }
-
-                    System.out.printf("Informe o valor a ser depositado: ");
-                    valorDeposito = leitor.nextFloat();
-                    saldo = valorDeposito;
                     break;
                 case "ii":
                 case "II":
-                case "2":
-                    
-                
+                    System.out.printf("Informe o código da conta: ");
+                    codigoConta = leitor.nextInt();
+
+                    for (int i = 0; i < codigosBanco.length; i++) {
+                        if (i == 9 && codigoConta != codigosBanco[i]) {
+                            System.out.printf("Conta não encontrada. Retornando ao menu.%n");
+                            break;
+                        } else if (i != 9 && codigoConta == codigosBanco[i]) {
+                            System.out.printf("Informe o valor do saque: R$ ");
+                            valorSaque = leitor.nextFloat();
+
+                            if (valorSaque <= saldo[i]) {
+                                saldo[i] -= valorSaque;
+                                System.out.printf("Saque realizado com sucesso. Retornando ao menu.%n");
+                                break;
+                            } else if (valorSaque > saldo[i]) {
+                                System.out.printf("Saldo insuficiente. Retornando ao menu.%n");
+                                break;
+                            }
+                        }
+                    }
+                    break;
+                case "iii":
+                case "III":
+                case "Iii":
+                case "IIi":
+                case "iIi":
+                case "iiI":
+                case "iII":
+                    for (int i = 0; i < codigosBanco.length; i++) {
+                        ativoBancario += saldo[i];
+                    }
+                    System.out.printf("O ativo bancário é R$ %.2f. Retornando ao menu.%n", ativoBancario);
+                    break;
+                case "iv":
+                case "Iv":
+                case "iV":
+                case "IV":
+                    saida = true;
+                    break;
+                default:
+                    System.out.printf("Operação inválida.%n");
+                    break;
             }
         }
         
