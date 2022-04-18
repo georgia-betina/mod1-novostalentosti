@@ -1,23 +1,29 @@
-package Teams.d17_03;
-
+package Teams;
 import java.util.Scanner;
 
-public class ex1 {
+public class Exercicio_01 {
     public static void main(String[] args) {
-        System.out.println("Acrescente um numero real:");
+        /* Exercício 1) Faça um programa que solicite o número de horas
+        * que um trabalhador realiza por dia, solicite o número de dias
+        * trabalhados em um mês e apresente o número total de horas
+        * trabalhadas no mês. */
+
+        // ENTRADAS
+        System.out.println("Olá, querido usuário. Por favor, digite o número de horas que você trabalha por dia:");
         Scanner leitor = new Scanner(System.in);
-        float numeroreal = leitor.nextFloat();
+        final int numhoras = leitor.nextInt();
+
+        System.out.println("Agora, digite o número de dias trabalhados por mês:");
+        Scanner leitor1 = new Scanner(System.in);
+        final int numdias = leitor1.nextInt();
+
         leitor.close();
+        leitor1.close();
 
-        // Faça um programa que receba um número real, encontre e mostre:
+        // PROCESSAMENTO
+        final int numtotal = numhoras * numdias;
 
-        // a parte inteira desse número;
-        int numerointeiro = (int)numeroreal;
-
-        float parteinteira = numeroreal - numerointeiro;
-
-        float arredondamento = Math.round(numeroreal);
-
-        System.out.println(String.format("O número inteiro é: %d%nA parte fracionária é: %.2f%nO arredondamento é: %.0f", numerointeiro, parteinteira, arredondamento));
+        // SAÍDA
+        System.out.println(String.format("O número total de horas trabalhadas no mês é %dh.", numtotal));
     }
 }
