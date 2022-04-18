@@ -11,7 +11,7 @@ public class Exercicio_06 {
         * dia.
         */
 
-        // ENTRADA
+        // ENTRADAS
         System.out.println("Olá, querido usuário. Por favor, informe a quantidade de refeições que o seu cão realiza por dia:");
         Scanner leitor = new Scanner(System.in);
         final int qtderefeicoes = leitor.nextInt();
