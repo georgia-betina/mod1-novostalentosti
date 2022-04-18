@@ -2,7 +2,7 @@ package Teams;
 
 import java.util.Scanner;
 
-public class ex6_16 {
+public class Exercicio_06 {
     public static void main(String[] args) {
         /* Exercício 6) Construa um programa que calcule a quantidade
         * total de ração consumida por um cachorro por mês. Solicite a
