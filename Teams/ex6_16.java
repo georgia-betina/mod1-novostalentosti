@@ -1,10 +1,13 @@
-package Teams.d16_03;
+package Teams;
 
 import java.util.Scanner;
 
 public class ex6_16 {
     public static void main(String[] args) {
-        // 6) Construa um programa que calcule a quantidade total de ração consumida por um cachorro por mês. Solicite a quantidade consumida por refeição e o numero de refeições por dia.
+        /* Exercício 6) Construa um programa que calcule a quantidade
+        * total de ração consumida por um cachorro por mês. Solicite a
+        * quantidade consumida por refeição e o numero de refeições por
+        * dia. */
 
         // ENTRADA
         System.out.println("Olá, querido usuário. Por favor, informe a quantidade de refeições que o seu cão realiza por dia:");

@@ -2,9 +2,9 @@ package Teams;
 
 import java.util.Scanner;
 
-public class ex5_16 {
+public class Exercicio_05 {
     public static void main(String[] args) {
-        /* 5) Construa um programa que mostre o percentual que uma
+        /* Exercício 5) Construa um programa que mostre o percentual que uma
         * despesa mensal representa do seu salário total. */
 
         // ENTRADA
