@@ -4,10 +4,13 @@ import java.util.Scanner;
 
 public class Exercicio_03 {
     public static void main(String[] args) {
-        /* Exercício 3) Faça um programa que calcule o valor de reembolso
-        * de despesas de combustível de um funcionário. Considere
-        * que o carro tem o consumo de 1 litro de gasolina a cada
-        * 13km rodado. E o preço do litro de gasolina é de R$ 2,20. */
+        /*
+        * Exercício 3) Faça um programa que calcule o valor de
+        * reembolso de despesas de combustível de um funcionário.
+        * Considere que o carro tem o consumo de 1 litro de gasolina
+        * a cada 13km rodado. E o preço do litro de gasolina é de
+        * R$ 2,20.
+        */
 
         // ENTRADA
         System.out.println("Olá, querido usuário. Por favor, insira o número de km rodados neste mês:");

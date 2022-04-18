@@ -3,10 +3,12 @@ import java.util.Scanner;
 
 public class Exercicio_01 {
     public static void main(String[] args) {
-        /* Exercício 1) Faça um programa que solicite o número de horas
+        /*
+        Exercício 1) Faça um programa que solicite o número de horas
         * que um trabalhador realiza por dia, solicite o número de dias
         * trabalhados em um mês e apresente o número total de horas
-        * trabalhadas no mês. */
+        * trabalhadas no mês.
+        */
 
         // ENTRADAS
         System.out.println("Olá, querido usuário. Por favor, digite o número de horas que você trabalha por dia:");

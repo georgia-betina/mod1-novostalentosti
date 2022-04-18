@@ -4,10 +4,12 @@ import java.util.Scanner;
 
 public class Exercicio_06 {
     public static void main(String[] args) {
-        /* Exercício 6) Construa um programa que calcule a quantidade
+        /*
+        * Exercício 6) Construa um programa que calcule a quantidade
         * total de ração consumida por um cachorro por mês. Solicite a
         * quantidade consumida por refeição e o numero de refeições por
-        * dia. */
+        * dia.
+        */
 
         // ENTRADA
         System.out.println("Olá, querido usuário. Por favor, informe a quantidade de refeições que o seu cão realiza por dia:");
@@ -15,11 +17,9 @@ public class Exercicio_06 {
         final int qtderefeicoes = leitor.nextInt();
 
         System.out.println("Agora, informe a quantidade consumida por refeição em gramas:");
-        Scanner leitor1 = new Scanner(System.in);
-        final float refeicaoemgramas = leitor1.nextFloat();
+        final float refeicaoemgramas = leitor.nextFloat();
 
         leitor.close();
-        leitor1.close();
 
         // PROCESSAMENTO
         final float qtdepordia = qtderefeicoes * refeicaoemgramas;
