@@ -1,17 +1,23 @@
-package Teams.d17_03;
+package Teams;
 
 import java.util.Scanner;
 
-public class ex1 {
+public class Exercicio_01_treino {
     public static void main(String[] args) {
+        /*
+        * Exercício 08) Faça um programa que receba um número real, encontre
+        * e mostre:
+        * - a parte inteira desse número; 2 (arredondamento, conversão de
+        * float pra int);
+        * - a parte fracionária desse número; 0.5 (o numero original e
+        * subtrair a parte inteira);
+        * - o arredondamento desse número; 3 (fazer o arredondamento).
+        */
         System.out.println("Acrescente um numero real:");
         Scanner leitor = new Scanner(System.in);
         float numeroreal = leitor.nextFloat();
         leitor.close();
 
-        // Faça um programa que receba um número real, encontre e mostre:
-
-        // a parte inteira desse número;
         int numerointeiro = (int)numeroreal;
 
         float parteinteira = numeroreal - numerointeiro;

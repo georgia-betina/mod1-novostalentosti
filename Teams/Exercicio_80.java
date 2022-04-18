@@ -1,14 +1,14 @@
-package Teams.d08_04;
+package Teams;
 
 import java.util.Scanner;
 
 public class Exercicio_80 {
     public static void main(String[] args) {
         /*
-         * 80) Faça um programa que carregue dois vetores de dez
-         * elementos numéricos cada um e mostre um vetor resultante
-         * da intercalação desses dois vetores.
-         */
+        * Exercício 80) Faça um programa que carregue dois vetores de dez
+        * elementos numéricos cada um e mostre um vetor resultante
+        * da intercalação desses dois vetores.
+        */
 
         Scanner leitor = new Scanner(System.in);
         int[] listaNumeros1 = new int[10];
