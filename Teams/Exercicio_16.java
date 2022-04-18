@@ -1,11 +1,11 @@
-package Teams;
+package teams;
 
 import java.util.Scanner;
 
 import javax.net.ssl.SSLPeerUnverifiedException;
 import javax.sound.sampled.SourceDataLine;
 
-public class ex9 {
+public class Exercicio_16 {
     public static void main(String[] args) {
         /*
         * Exercício 16) Faça um programa que receba o valor do

@@ -1,8 +1,8 @@
-package Teams;
+package teams;
 
 import java.util.Scanner;
 
-public class ex11 {
+public class Exercicio_18 {
     public static void main(String[] args) {
         /*
         * Exercício 18) Faça um programa que receba uma temperatura em

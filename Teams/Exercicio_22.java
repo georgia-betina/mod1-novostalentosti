@@ -1,8 +1,8 @@
-package Teams;
+package teams;
 
 import java.util.Scanner;
 
-public class ex22 {
+public class Exercicio_22 {
     public static void main(String[] args) {
         /*
         * Exercício 22) Faça um programa que receba o salário-base de

@@ -1,4 +1,4 @@
-package Teams.d28_03;
+package teams;
 
 public class Exercicio_49 {
     public static void main(String[] args) {

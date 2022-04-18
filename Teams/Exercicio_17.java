@@ -1,8 +1,8 @@
-package Teams;
+package teams;
 
 import java.util.Scanner;
 
-public class ex10 {
+public class Exercicio_17 {
     public static void main(String[] args) {
         /*
         * Exercício 17) João recebeu seu salário e precisa pagar duas

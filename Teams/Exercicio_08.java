@@ -1,14 +1,14 @@
-package Teams;
+package teams;
 
 import java.util.Scanner;
 
 public class Exercicio_08 {
     public static void main(String[] args) {
         /*
-        * Exercício 08) Faça um programa que receba um número real, encontre
-        * e mostre:
-        * - a parte inteira desse número; 2 (arredondamento, conversão de
-        * float pra int);
+        * Exercício 8) Faça um programa que receba um número real,
+        * encontre e mostre:
+        * - a parte inteira desse número; 2 (arredondamento, conversão
+        * de float pra int);
         * - a parte fracionária desse número; 0.5 (o numero original e
         * subtrair a parte inteira);
         * - o arredondamento desse número; 3 (fazer o arredondamento).

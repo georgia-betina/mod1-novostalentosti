@@ -1,8 +1,8 @@
-package Teams;
+package teams;
 
 import java.util.Scanner;
 
-public class ex6 {
+public class Exercicio_13 {
     public static void main(String[] args) {
         /*
         * Exercício 13) Faça um programa que calcule e mostre a

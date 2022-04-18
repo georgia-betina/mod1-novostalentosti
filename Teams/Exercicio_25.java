@@ -4,23 +4,29 @@ import java.util.Scanner;
 
 public class ex25 {
     public static void main(String[] args) {
-        float saldoInicial = 0;
+        /*
+        * Exercício 25) Um trabalhador recebeu seu salário e depositou em
+        * sua conta corrente bancária. Esse trabalhador emitiu dois cheques
+        * e agora deseja saber seu saldo atual. Sabe-se que cada operação
+        * bancária de retirada paga CPMF de 0,38% e o saldo inicial da
+        conta esta zerado. 
+        */
+
+        // ENTRADAS
         System.out.println("Insira o valor do depósito:");
         Scanner leitor = new Scanner(System.in);
         final float deposito = leitor.nextFloat();
 
         System.out.println("Insira o valor do primeiro cheque:");
-        Scanner leitor1 = new Scanner(System.in);
-        final float cheque1 = leitor1.nextFloat();
+        final float cheque1 = leitor.nextFloat();
 
         System.out.println("Insira o valor do segundo cheque:");
-        Scanner leitor2 = new Scanner(System.in);
-        final float cheque2 = leitor2.nextFloat();
+        final float cheque2 = leitor.nextFloat();
 
         leitor.close();
-        leitor1.close();
-        leitor2.close();
         
+        // PROCESSAMENTO
+        float saldoInicial = 0;
         saldoInicial = saldoInicial + deposito;
         final float cPMF = 0.38f;
 
@@ -32,6 +38,7 @@ public class ex25 {
 
         final double saldoFinal = retirada2;
 
+        // SAIDA
         System.out.println(String.format("O valor do saldo final é: R$%.2f.", saldoFinal));
 
     }

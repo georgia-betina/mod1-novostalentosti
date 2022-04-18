@@ -1,4 +1,4 @@
-package Teams;
+package teams;
 
 import java.util.Scanner;
 

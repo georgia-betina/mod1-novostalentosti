@@ -1,4 +1,4 @@
-package Teams.d07_04;
+package teams;
 
 //import java.util.Arrays;
 import java.util.Scanner;

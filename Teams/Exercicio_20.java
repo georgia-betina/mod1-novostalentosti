@@ -1,8 +1,8 @@
-package Teams;
+package teams;
 
 import java.util.Scanner;
 
-public class ex13 {
+public class Exercicio_20 {
     public static void main(String[] args) {
         /*
         * Exercício 20) Faça um programa que receba uma hora (uma

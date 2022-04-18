@@ -1,8 +1,8 @@
-package Teams;
+package teams;
 
 import java.util.Scanner;
 
-public class ex24 {
+public class Exercicio_24 {
     public static void main(String[] args) {
         /*
         * Exercício 24) Faça um programa que receba o número de horas

@@ -1,8 +1,8 @@
-package Teams;
+package teams;
 
 import java.util.Scanner;
 
-public class ex12 {
+public class Exercicio_19 {
     public static void main(String[] args) {
         /*
         * Exercício 19) Sabe-se que, para iluminar de maneira correta os

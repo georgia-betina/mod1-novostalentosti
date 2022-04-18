@@ -1,6 +1,6 @@
-package Teams;
+package teams;
 
-public class ex23 {
+public class Exercicio_23 {
     public static void main(String[] args) {
         /*
         * Exercício 23) Considere para as respostas os seguintes valores: 

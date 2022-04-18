@@ -1,8 +1,8 @@
-package Teams;
+package teams;
 
 import java.util.Scanner;
 
-public class ex4 {
+public class Exercicio_11 {
     public static void main(String[] args) {
         /*
         * Exercício 11) Faça um programa que receba o peso de uma pessoa,
