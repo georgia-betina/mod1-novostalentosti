@@ -4,6 +4,14 @@ import java.util.Scanner;
 
 public class Exercicio_36 {
     public static void main(String[] args) {
+        /*
+        * Exercício 36) Pedro comprou um saco de ração com peso em quilos.
+        * Pedro possui dois gatos para os quais fornece a quantidade de
+        * ração em gramas. Faça um programa que receba o peso do saco de
+        * ração e a quantidade de ração fornecida para cada gato. Calcule
+        * e mostre quanto restará de ração no saco após cinco dias.
+        */
+
         System.out.printf("Informe o peso do pacote de ração em kg: ");
         Scanner leitor = new Scanner(System.in);
         final float pacoteRacaoKG = leitor.nextFloat();
