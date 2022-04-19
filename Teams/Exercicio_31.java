@@ -2,8 +2,18 @@ package teams;
 
 import java.util.Scanner;
 
-public class ex31 {
+public class Exercicio_31 {
     public static void main(String[] args) {
+        /*
+        * Exercício 31) Faça um programa que mostre o menu de opções a seguir,
+        * receba a opção do usuário e os dados necessários para executar cada
+        * operação.
+        * Menu de opções:
+        * 1. Somar dois números
+        * 2. Raiz quadrada de um número
+        * Solicite ao usuário digitar a opção desejada.
+        */
+
         System.out.printf("Digite um número para selecionar uma das opções a seguir:%n%n1. Somar dois números;%n2. Raiz quadrada de um número.%nR: ");
         Scanner leitor = new Scanner(System.in);
         final int digito = leitor.nextInt();
