@@ -4,11 +4,14 @@ import java.util.Scanner;
 
 public class Exercicio_41 {
     public static void main(String[] args) {
-        /* Escreva um algoritmo que calcule o número de páginas mínimo
-        que um leitor deve ler para terminar um livro em um determinado
-        numero de dias informado. Caso o número de paginas a ler por dia
-        for maior que 100, informe ao usuário que é impossível de realizar
-        a leitura, caso contrário apresente o número de paginas. */
+        /*
+        * Exercício 41) Escreva um algoritmo que calcule o número de
+        * páginas mínimo que um leitor deve ler para terminar um livro
+        * em um determinado numero de dias informado. Caso o número de
+        * paginas a ler por dia for maior que 100, informe ao usuário
+        * que é impossível de realizar a leitura, caso contrário
+        * apresente o número de páginas.
+        */
 
         System.out.printf("Informe a quantidade total de páginas do livro: ");
         Scanner leitor = new Scanner(System.in);
