@@ -4,6 +4,13 @@ import java.util.Scanner;
 
 public class Exercicio_39 {
     public static void main(String[] args) {
+        /*
+        * Exercício 39) Escreva o algoritmo de um programa que solicite dois
+        * números quaisquer ao usuário, se os números forem iguais mostre uma
+        * mensagem e mostre a media dos dois, caso contrário mostre qual o
+        * maior número e qual o menor número. 
+        */
+
         System.out.printf("Escreva o primeiro número: ");
         Scanner leitor = new Scanner(System.in);
         final float numero1 = leitor.nextFloat();
