@@ -8,11 +8,11 @@ public class App {
     // Criando uma variável do tipo Pessoa
     // Criando uma instância de objeto a partir da classe Pessoa
         
-    Pessoa zezinho = new Pessoa();
+    Pessoa zezinho = new Pessoa("Zezinho");
     zezinho.nome = "Zezinho da Silva Sauro";
     zezinho.altura = 1.75f;
 
-    Pessoa luizinho = new Pessoa();
+    Pessoa luizinho = new Pessoa("Luiz");
     luizinho.nome = "Luizinho da Silva Sauro Jr";
     luizinho.altura = 1.68f;
 
