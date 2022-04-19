@@ -12,6 +12,7 @@ public class App {
     // instanciação
     Pessoa zezinho = new Pessoa("Zezinho");
     //zezinho.nome = "Zezinho da Silva Sauro";
+    zezinho.CPF = "555.555.555-55";
     zezinho.altura = 1.75f;
     zezinho.idade = 22;
 
@@ -36,5 +37,8 @@ public class App {
     System.out.println(guardaResultado);
     guardaResultado = luizinho.podeDirigir();
     System.out.println(guardaResultado);
+
+    zezinho.mostraCPF(); // void não precisa criar variável
+    luizinho.mostraCPF();
     }
 }
