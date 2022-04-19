@@ -3,10 +3,15 @@ package intro_POO;
 public class Pessoa {
     // Atributos
     // escopo de vida de instância
-    public String nome;
+    private String nome; // private impede a alteração fácil | encapsular
     public int idade;
     public String CPF;
     public float altura;
+
+    // GETTER e SETTER
+    public String getNome(){ // método GET do nome
+        return this.nome;
+    }
 
     // Comportamentos
     // CONSTRUTOR - inicializar um objeto e definir valores obrigatórios
