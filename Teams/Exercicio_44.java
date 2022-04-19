@@ -4,11 +4,12 @@ import java.util.Scanner;
 
 public class Exercicio_44 {
     public static void main(String[] args) {
-        /* Escreva um algoritmo que calcule o valor de uma
-        chamada de telefone. Deverá ser informado a quantidade
-        de minutos falados durante a ligação além de sua origem.
-        Considere que uma ligação “local” custa R$0.020, ligação
-        “intermunicipal” R$0,08 e “interestadual” R$0,1. */
+        /*
+        * Exercício 44) Escreva um algoritmo que calcule o valor de uma chamada
+        * de telefone. Deverá ser informado a quantidade de minutos falados
+        * durante a ligação além de sua origem. Considere que uma ligação “local”
+        * custa R$0.020, ligação “intermunicipal” R$0,08 e “interestadual” R$0,1.
+        */
 
         System.out.printf("Informe o tipo de ligação:%n1 - Local%n2 - Intermunicipal%n3 - Interestadual%n%nCódigo: ");
         Scanner leitor = new Scanner(System.in);
