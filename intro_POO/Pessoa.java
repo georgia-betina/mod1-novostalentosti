@@ -13,6 +13,10 @@ public class Pessoa {
         return this.nome;
     }
 
+    public void setNome(String nome){ // se eu quiser possibilitar a mudança da variável a partir de um método
+        this.nome = nome;
+    }
+
     // Comportamentos
     // CONSTRUTOR - inicializar um objeto e definir valores obrigatórios
     public Pessoa(String nome){ // escopo de vida local

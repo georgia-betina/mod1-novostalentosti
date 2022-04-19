@@ -11,18 +11,18 @@ public class App {
     // passagem de parâmetros
     // instanciação
     Pessoa zezinho = new Pessoa("Zezinho");
-    //zezinho.nome = "Zezinho da Silva Sauro";
+    zezinho.setNome("Zezinho da Silva Sauro");
     zezinho.CPF = "555.555.555-55";
     zezinho.altura = 1.75f;
     zezinho.idade = 22;
 
     Pessoa luizinho = new Pessoa("Luiz");
-    //luizinho.nome = "Luizinho da Silva Sauro Jr";
+    luizinho.setNome("Luizinho da Silva Sauro Jr");
     luizinho.altura = 1.68f;
     luizinho.idade = 17;
 
-    System.out.println(zezinho.nome);
-    System.out.println(luizinho.nome);
+    System.out.println(zezinho.getNome());
+    System.out.println(luizinho.getNome());
 
     System.out.println(zezinho.altura);
     System.out.println(luizinho.altura);
