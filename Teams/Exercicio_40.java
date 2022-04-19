@@ -4,11 +4,14 @@ import java.util.Scanner;
 
 public class Exercicio_40 {
     public static void main(String[] args) {
-        /* Escreva um algoritmo que solicite a quantidade total em miligramas
-        de colesterol mau existente no sangue de um paciente. Considerando que
-        o valor máximo ideal para uma pessoa saudável é 130mg, caso a quantidade
-        esteja menor apresente uma mensagem indicando que esta menor. Caso esteja
-        acima, calcule o percentual que esta acima e apresente uma mensagem. */
+        /*
+        * Exercício 40) Escreva um algoritmo que solicite a quantidade total
+        * em miligramas de colesterol mau existente no sangue de um paciente.
+        * Considerando que o valor máximo ideal para uma pessoa saudável é
+        * 130mg, caso a quantidade esteja menor apresente uma mensagem
+        * indicando que esta menor. Caso esteja acima, calcule o percentual
+        * que esta acima e apresente uma mensagem.
+        */
 
         System.out.printf("Informe a quantidade total de colesterol em mg: ");
         Scanner leitor = new Scanner(System.in);
