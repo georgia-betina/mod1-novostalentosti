@@ -4,11 +4,12 @@ import java.util.Scanner;
 
 public class Exercicio_47 {
     public static void main(String[] args) {
-        /* Escreva um algoritmo que calcule o valor de Imposto
-        de Renda que uma Pessoa Física deve pagar de acordo com
-        o valor total de seu rendimento anual: abaixo de R$19.200
-        isento, acima deste valor e até R$30.000 8%. Mais que
-        R$30.000 anuais 11%. */
+        /*
+        * Exercício 47) Escreva um algoritmo que calcule o valor de Imposto
+        * de Renda que uma Pessoa Física deve pagar de acordo com o valor
+        * total de seu rendimento anual: abaixo de R$19.200 isento, acima
+        * deste valor e até R$30.000 8%. Mais que R$30.000 anuais 11%.
+        */
 
         System.out.printf("Informe o valor do seu rendimento anual: R$ ");
         Scanner leitor = new Scanner(System.in);
