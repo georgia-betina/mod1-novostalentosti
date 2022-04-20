@@ -8,8 +8,6 @@ public class Pessoa {
     private String CPF;
     private float altura;
 
-    
-
     public String getCPF() {
         return CPF;
     }
