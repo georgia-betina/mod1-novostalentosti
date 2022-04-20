@@ -34,6 +34,7 @@ public class Exercicio_Nao_Repetir_Resumo {
                     }
                         
                     }}
+                    leitor.close();
                 /* do {
                     for (int j = i - 1; j >=0; j--) {
                         if (x[i] == x[j]) {
