@@ -3,10 +3,20 @@ package intro_POO;
 public class Pessoa {
     // Atributos
     // escopo de vida de instância
-    private String nome; // private impede a alteração fácil | encapsular
-    public int idade;
+    private String nome; // private impede a alteração fácil | encapsular - POJO - Plain old Java object
+    private int idade;
     public String CPF;
     public float altura;
+
+    //
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
 
     // GETTER e SETTER
     public String getNome(){ // método GET do nome
