@@ -19,7 +19,6 @@ public class Exercicio_20 {
         final int horas = leitor.nextInt();
 
         System.out.println("Digite apenas os minutos:");
-        Scanner leitor1 = new Scanner(System.in);
         final int minutos = leitor.nextInt();
 
         leitor.close();

@@ -2,9 +2,6 @@ package teams;
 
 import java.util.Scanner;
 
-import javax.net.ssl.SSLPeerUnverifiedException;
-import javax.sound.sampled.SourceDataLine;
-
 public class Exercicio_16 {
     public static void main(String[] args) {
         /*
