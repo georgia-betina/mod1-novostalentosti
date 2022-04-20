@@ -2,7 +2,7 @@ package teams;
 
 import java.util.Scanner;
 
-public class ex26 {
+public class Exercicio_26 {
     public static void main(String[] args) {
         /*
         * Exercício 26) Sabe-se que o quilowatt de energia custa um quinto do

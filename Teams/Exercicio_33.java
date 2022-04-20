@@ -2,7 +2,7 @@ package teams;
 
 import java.util.Scanner;
 
-public class ex33 {
+public class Exercicio_33 {
     public static void main(String[] args) {
         /*
         * Exercício 33) Faça um programa que receba:

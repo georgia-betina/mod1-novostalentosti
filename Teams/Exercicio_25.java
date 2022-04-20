@@ -2,7 +2,7 @@ package teams;
 
 import java.util.Scanner;
 
-public class ex25 {
+public class Exercicio_25 {
     public static void main(String[] args) {
         /*
         * Exercício 25) Um trabalhador recebeu seu salário e depositou em

@@ -2,7 +2,7 @@ package teams;
 
 import java.util.Scanner;
 
-public class ex29 {
+public class Exercicio_29 {
     public static void main(String[] args) {
         /*
         * Exercício 29) Faça um programa que receba um número inteiro

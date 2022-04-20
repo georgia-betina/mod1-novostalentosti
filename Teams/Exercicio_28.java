@@ -2,7 +2,7 @@ package teams;
 
 import java.util.Scanner;
 
-public class ex28 {
+public class Exercicio_28 {
     public static void main(String[] args) {
         System.out.println("Digite a sua idade:");
         Scanner leitor = new Scanner(System.in);

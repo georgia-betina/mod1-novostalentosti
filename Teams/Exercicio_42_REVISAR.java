@@ -2,7 +2,7 @@ package teams;
 
 import java.util.Scanner;
 
-public class Exercicio_42 {
+public class Exercicio_42_REVISAR {
     public static void main(String[] args) {
         /* Escreva um algoritmo que calcule o valor da multa (em UFIR)
         que um motorista deve receber de acordo com a velocidade de seu

@@ -2,7 +2,7 @@ package teams;
 
 import java.util.Scanner;
 
-public class ex32 {
+public class Exercicio_32_REVISAR {
     public static void main(String[] args) {
         /*
         * Exercício 32) Faça um programa que receba três notas de um aluno, calcule

@@ -2,7 +2,7 @@ package teams;
 
 import java.util.Scanner;
 
-public class ex27 {
+public class Exercicio_27 {
     public static void main(String[] args) {
         /*
         * Exercício 27) Faça um programa que receba a quantidade de dinheiro em
