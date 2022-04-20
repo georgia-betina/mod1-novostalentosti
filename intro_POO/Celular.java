@@ -4,6 +4,15 @@ public class Celular {
     private String numero;
     private String marca;
     private String modelo;
+    private Pessoa dono;
+
+    public Pessoa getDono() {
+        return dono;
+    }
+
+    public void setDono(Pessoa dono) {
+        this.dono = dono;
+    }
 
     public String getNumero() {
         return numero;
