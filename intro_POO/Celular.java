@@ -28,4 +28,9 @@ public class Celular {
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
+
+    public Celular (String numero) {
+        System.out.println("CONTRUTOR:" + numero);
+        this.numero = numero;
+    }
 }
