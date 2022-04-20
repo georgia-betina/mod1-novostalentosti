@@ -1,7 +1,5 @@
 package intro_POO;
 
-import intro_POO.Pessoa;
-
 public class App {
     public static void main(String[] args) {
 
@@ -40,5 +38,11 @@ public class App {
 
     zezinho.mostraCPF(); // void não precisa criar variável
     luizinho.mostraCPF();
+
+    Celular startak = new Celular("(47) 99999-9999");
+    startak.setModelo("PT 550");
+    startak.setMarca("Motorola");
+    
+    startak.setDono(zezinho);
     }
 }
