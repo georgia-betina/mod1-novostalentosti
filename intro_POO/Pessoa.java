@@ -5,10 +5,26 @@ public class Pessoa {
     // escopo de vida de instância
     private String nome; // private impede a alteração fácil | encapsular - POJO - Plain old Java object
     private int idade;
-    public String CPF;
-    public float altura;
+    private String CPF;
+    private float altura;
 
-    //
+    
+
+    public String getCPF() {
+        return CPF;
+    }
+
+    public void setCPF(String cPF) {
+        CPF = cPF;
+    }
+
+    public float getAltura() {
+        return altura;
+    }
+
+    public void setAltura(float altura) {
+        this.altura = altura;
+    }
 
     public int getIdade() {
         return idade;
