@@ -38,14 +38,17 @@ public class Pessoa {
     }
 
     public void setNome(String nome){ // se eu quiser possibilitar a mudança da variável a partir de um método
-        this.nome = nome;
+        if(!nome.equals("")){
+            this.nome = nome;
+        }
     }
 
     // Comportamentos
     // CONSTRUTOR - inicializar um objeto e definir valores obrigatórios
     public Pessoa(String nome){ // escopo de vida local
         System.out.println("CONTRUTOR:" + nome);
-        this.nome = nome;
+        //this.nome = nome;
+        setNome(nome); // proteger o objeto
     }
 
     // método (em outras linguagens mais antigas é chamado de função)

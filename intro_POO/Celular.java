@@ -5,7 +5,8 @@ public class Celular {
     private String marca;
     private String modelo;
     private Pessoa dono;
-
+    private Aplicativo[] listaAplicativos;
+    
     public Pessoa getDono() {
         return dono;
     }
