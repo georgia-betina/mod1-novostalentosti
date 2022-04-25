@@ -44,5 +44,18 @@ public class App {
     startak.setMarca("Motorola");
     
     startak.setDono(zezinho);
+
+    Aplicativo app1 = new Aplicativo("Angry Birds");
+    Aplicativo app2 = new Aplicativo("Whatasapp");
+    Aplicativo app3 = new Aplicativo("TikTok");
+    Aplicativo app4 = new Aplicativo("Instagram");
+
+    startak.getListaAplicativos().add(app1);
+    startak.getListaAplicativos().add(app2);
+    startak.getListaAplicativos().add(app3);
+    startak.getListaAplicativos().add(app4);
+
+    System.out.println(startak.getListaAplicativos().get(0));
+    
     }
 }

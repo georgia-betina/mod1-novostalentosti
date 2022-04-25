@@ -1,11 +1,17 @@
 package intro_POO;
 
+import java.util.ArrayList;
+
 public class Celular {
     private String numero;
     private String marca;
     private String modelo;
     private Pessoa dono;
-    private Aplicativo[] listaAplicativos;
+    private ArrayList listaAplicativos = new ArrayList();
+
+    public ArrayList getListaAplicativos() {
+        return listaAplicativos;
+    }
     
     public Pessoa getDono() {
         return dono;
