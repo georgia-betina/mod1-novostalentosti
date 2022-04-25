@@ -2,19 +2,18 @@ package intro_POO;
 
 public class Aplicativo {
     private String nome;
-    
+
     public Aplicativo(String nome) {
-        setNomeUsuario(nome);
+        setNome(nome);        
     }
 
     public String getNome() {
         return nome;
     }
 
-    public void setNomeUsuario(String nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
-
     public String toString(){
         return getNome();
     }

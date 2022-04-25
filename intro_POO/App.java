@@ -54,6 +54,14 @@ public class App {
     startak.getListaAplicativos().add(app2);
     startak.getListaAplicativos().add(app3);
     startak.getListaAplicativos().add(app4);
+    /*startak.getListaAplicativos().add("Laranja");
+    startak.getListaAplicativos().add("Banana");
+    startak.getListaAplicativos().add(1234);
+    startak.getListaAplicativos().add(1200.05f);
+    startak.getListaAplicativos().add(true);*/
+
+    startak.getListaAplicativos().remove(2);
+    startak.getListaAplicativos().set(2, new Aplicativo("GloboPlay"));
 
     for(int i=0; i < startak.getListaAplicativos().size(); i++) {
         System.out.println(startak.getListaAplicativos().get(i));

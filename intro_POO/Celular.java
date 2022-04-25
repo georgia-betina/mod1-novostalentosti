@@ -9,8 +9,12 @@ public class Celular {
     private Pessoa dono;
     private ArrayList<Aplicativo> listaAplicativos = new ArrayList<>(); // operador diamante <> - generics
 
-    public ArrayList getListaAplicativos() {
+    public ArrayList<Aplicativo> getListaAplicativos() {
         return listaAplicativos;
+    }
+
+    public void setListaAplicativos(ArrayList<Aplicativo> listaAplicativos) {
+        this.listaAplicativos = listaAplicativos;
     }
     
     public Pessoa getDono() {
