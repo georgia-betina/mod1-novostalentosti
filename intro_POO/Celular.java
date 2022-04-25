@@ -7,6 +7,8 @@ public class Celular {
     private String marca;
     private String modelo;
     private Pessoa dono;
+
+
     private ArrayList<Aplicativo> listaAplicativos = new ArrayList<>(); // operador diamante <> - generics
 
     public ArrayList<Aplicativo> getListaAplicativos() {
