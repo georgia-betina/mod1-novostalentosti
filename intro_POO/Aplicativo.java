@@ -1,7 +1,7 @@
 package intro_POO;
 
 public class Aplicativo {
-    private String nome;
+    protected String nome;
 
     public Aplicativo(String nome) {
         setNome(nome);        

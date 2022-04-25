@@ -62,6 +62,7 @@ public class App {
 
     startak.getListaAplicativos().remove(2);
     startak.getListaAplicativos().set(2, new Aplicativo("GloboPlay"));
+    System.out.println(startak.getListaAplicativos().indexOf(app1));
 
     for(int i=0; i < startak.getListaAplicativos().size(); i++) {
         System.out.println(startak.getListaAplicativos().get(i));
