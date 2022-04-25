@@ -71,5 +71,9 @@ public class App {
     for(Object umApp:startak.getListaAplicativos()) { // quando usamos aplicativo, nao retorna nada
         System.out.println(umApp);
     }
+
+    var app = new Aplicativo("");
+    app.nome = "lalala";
+
     }
 }

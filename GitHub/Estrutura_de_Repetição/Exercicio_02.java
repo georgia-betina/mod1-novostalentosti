@@ -4,9 +4,12 @@ import java.util.Scanner;
 
 public class Exercicio_02 {
     public static void main(String[] args) {
-        /* Escreva um programa que pergunte ao usuário um número
-        e após, escreva na tela a soma total de 1 até o número
-        lido. Exemplo: 5: 1 + 2 + 3 + 4 + 5 = 15 */
+        /*
+        * Exercício 02) Escreva um programa que pergunte ao usuário um número
+        * e após, escreva na tela a soma total de 1 até o número lido. Exemplo:
+        * 5: 1 + 2 + 3 + 4 + 5 = 15
+        */
+
         Scanner leitor = new Scanner(System.in);
 
         int entradaNumero = 0;

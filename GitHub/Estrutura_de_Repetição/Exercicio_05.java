@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Exercicio_05 {
     public static void main(String[] args) {
         /*
-         * Faça um programa para calcular e escrever a soma
-         * dos cubos dos números pares compreendidos entre A e B
-         * (B > A). A e B são lidos pelo teclado.
-         */
+        * Exercício 05) Faça um programa para calcular e escrever a soma dos cubos
+        * dos números pares compreendidos entre A e B (B > A). A e B são lidos pelo
+        * teclado.
+        */
 
         Scanner leitor = new Scanner(System.in);
         int valorA = 0;
@@ -34,7 +34,7 @@ public class Exercicio_05 {
                         aoCubo = aumentaContagem;
                     }
                 }
-                System.out.printf("A soma é %d", somaNumeros);
+                System.out.printf("A soma é %d\n", somaNumeros);
                 // contador até valor B -> os resultados sao pares? se sim, calcula o cubo e soma
             }
 
