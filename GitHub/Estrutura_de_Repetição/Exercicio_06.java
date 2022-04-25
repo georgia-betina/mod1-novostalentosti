@@ -25,5 +25,7 @@ public class Exercicio_06 {
         }
 
         leitor.close();
+
+        // OBSERVAÇÕES: não ignora entradas negativas ou inválidas, não pede em qual mês foi realizado o depósito
     }
 }
