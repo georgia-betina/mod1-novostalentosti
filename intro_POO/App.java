@@ -56,6 +56,5 @@ public class App {
     startak.getListaAplicativos().add(app4);
 
     System.out.println(startak.getListaAplicativos().get(0));
-    
     }
 }
