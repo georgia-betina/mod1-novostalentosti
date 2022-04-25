@@ -55,6 +55,12 @@ public class App {
     startak.getListaAplicativos().add(app3);
     startak.getListaAplicativos().add(app4);
 
-    System.out.println(startak.getListaAplicativos().get(0));
+    for(int i=0; i < startak.getListaAplicativos().size(); i++) {
+        System.out.println(startak.getListaAplicativos().get(i));
+    }
+
+    for(Object umApp:startak.getListaAplicativos()) { // quando usamos aplicativo, nao retorna nada
+        System.out.println(umApp);
+    }
     }
 }
