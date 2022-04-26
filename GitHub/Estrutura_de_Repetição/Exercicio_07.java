@@ -46,7 +46,5 @@ public class Exercicio_07 {
                 contaDivisao = 0;
             }
         }
-
-        System.out.println(intervaloReal);
     }
 }
